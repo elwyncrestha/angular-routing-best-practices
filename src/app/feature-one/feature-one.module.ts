@@ -3,11 +3,10 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { FeatureOneComponent } from './feature-one.component';
 import { FeatureOneRoutes } from './feature-one.routes';
-import { FeatureSpecificCanActivateGuard } from './_guards';
+import { TempComponent } from './temp/temp.component';
 
 @NgModule({
-  declarations: [FeatureOneComponent],
-  imports: [CommonModule, RouterModule.forChild(FeatureOneRoutes)],
-  providers: [FeatureSpecificCanActivateGuard]
+  declarations: [FeatureOneComponent, TempComponent],
+  imports: [CommonModule, RouterModule.forChild(FeatureOneRoutes)]
 })
 export class FeatureOneModule {}

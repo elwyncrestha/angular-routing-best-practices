@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 import { FeatureOneComponent } from './feature-one.component';
-import { FeatureSpecificCanActivateGuard } from './_guards';
+import {TempComponent} from "./temp/temp.component";
 
 export const FeatureOneRoutes: Routes = [
   {
@@ -10,7 +10,10 @@ export const FeatureOneRoutes: Routes = [
   },
   {
     path: 'feature-one-component',
-    component: FeatureOneComponent,
-    canActivate: [FeatureSpecificCanActivateGuard]
+    component: FeatureOneComponent
+  },
+  {
+    path: 'temp',
+    component: TempComponent
   }
 ];
